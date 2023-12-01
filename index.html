@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compu Center - Regala Tecnología</title>
+    <style>
+        body {
+            background-image: url(./assets/Texto\ Compu\ Center_no-slogan-white.png) ;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+            color: #333;
+            letter-spacing: 1px; /* Espaciado entre letras */
+        }
+
+        header, footer {
+            background-color: #2B3467;
+            color: #FCFFE7;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 5px 0;
+        }
+
+        header p, footer p {
+            margin: 5px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #EB455F;
+            padding: 10px;
+        }
+
+        section {
+            padding: 20px;
+            section {
+    padding: 20px;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.store img {
+    width: 20px; /* Ajusta el tamaño del icono según sea necesario */
+    margin-right: 10px;
+}
+
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centra los elementos en el contenedor */
+        }
+
+        .product {
+            height: 600px;
+            max-width: 800px; /* Tamaño fijo para la caja de producto */
+            margin: 0 15px 30px; /* Espacio entre productos */
+            text-align: center;
+            position: relative;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+        }
+
+        .product img {
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            width: 100%;
+            text-align: center;
+        }
+
+        .product-details h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .product-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cta-button {
+            text-align: center;
+            width: 80%;
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff; /* Letras blancas */
+            background-color: #EB455F; /* Color rojo */
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #banner {
+            background-image: url('./recursos/banner.jpg');
+            background-size: cover;
+            color: hsl(0, 0%, 100%);
+            padding: 3px;
+            text-align: center;
+            overflow: hidden;
+            opacity: 0.9;
+        }
+
+        /* Estilo alternativo para los productos */
+        #productSection>section:nth-child(even) .product {
+            background-color: #ADD8E6; /* Celeste pálido */
+        }
+
+        #productSection>section:nth-child(odd) .product {
+            background-color: #fff; /* Blanco */
+        }
+
+        @media (min-width: 769px) {
+            .product {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .product img {
+                width: 500px;
+                margin-right: 20px;
+            }
+
+            .product-details {
+                width: 50%;
+            }
+
+            #productSection>section {
+                width: 30%;
+            }
+
+            #productSection>section:nth-child(2) {
+                width: 70%;
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        <h1>Compu Center</h1>
+    </header> -->
+
+    <section id="banner">
+        <h2>ESTA NAVIDAD REGALA TECNOLOGÍA DE CALIDAD.</h2>
+    </section>
+
+    <section id="productSection" class="product-container">
+        <!-- Producto 1 -->
+        <div class="product" id="product1">
+            <img src="./recursos/alexa.jpg" alt="Alexa de 5ta generación">
+            <div class="product-details">
+                <h2>Alexa de 5ta generación</h2>
+                <p>Altavoz inteligente con asistente virtual</p>
+                <ul>
+                    <li>Conexión Bluetooth</li>
+                    <li>Control por voz fácil de usar</li>
+                    <li>Calidad de sonido excepcional</li>
+                    <li>Diseño elegante y compacto</li>
+                    <li>Compatible con dispositivos inteligentes</li>
+                </ul>
+               
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product hidden" id="product2">
+            <img src="./recursos/canon.jpg" alt="Impresora Canon g2160">
+            <div class="product-details">
+                <h2>Impresora Canon g2160</h2>
+                <p>Impresora multifuncional de alta calidad</p>
+                <ul>
+                    <li>Impresión a color de alta resolución</li>
+                    <li>Escaneo y copiado rápidos</li>
+                    <li>Conectividad inalámbrica</li>
+                    <li>Pantalla táctil intuitiva</li>
+                    <li>Diseño compacto y elegante</li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product hidden" id="product3">
+            <img src="./recursos/laptop.jpg" alt="Laptop">
+            <div class="product-details">
+                <h2>Laptop</h2>
+                <p>Portátil potente y versátil para todas tus necesidades</p>
+                <ul>
+                    <li>Procesador de última generación</li>
+                    <li>Almacenamiento de alta capacidad</li>
+                    <li>Pantalla de alta resolución</li>
+                    <li>Teclado retroiluminado</li>
+                    <li>Diseño ligero y portátil</li>
+                </ul>
+        
+            </div>
+        </div>
+
+        <!-- Nuevo Producto (Producto 4) -->
+        <div class="product hidden" id="product4">
+            <img src="./recursos/tecnología.jpg" alt="Nuevo Producto">
+            <div class="product-details">
+                <h2>Tecnología de calidad</h2>
+                <p>Elige el mejor regalo</p>
+                <ul>
+                    <li>Mouse, teclados, y más.</li>
+                    <li>Productos gaming</li>
+                    <li>Bombillas inteligentes</li>
+                    <li>Cámaras de seguridad</li>
+                    <li>Equipos de sonido</li>
+                    <!-- Agrega más características según sea necesario -->
+                </ul>
+       
+            </div>
+        </div>
+    </section>
+    <a href="https://wa.me/50241126294" class="cta-button" style="display: block; margin: 0 auto;">Comprar por WhatsApp</a> 
+
+    <section>
+   
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Compu Center. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentProduct = 1;
+
+            function showProduct(productNumber) {
+                for (let i = 1; i <= 4; i++) {
+                    const product = document.getElementById(`product${i}`);
+                    product.classList.add("hidden");
+                }
+
+                const currentProductElement = document.getElementById(`product${productNumber}`);
+                currentProductElement.classList.remove("hidden");
+            }
+
+            function nextProduct() {
+                currentProduct = (currentProduct % 4) + 1;
+                showProduct(currentProduct);
+            }
+
+            showProduct(currentProduct);
+
+            setInterval(nextProduct, 4000);
+        });
+    </script>
+</body>
+
+</html>
